@@ -15,9 +15,12 @@
     <header>
         <!-- Nav Bar -->
         <!-- Bootstrap Nav Bar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <a class="navbar-brand" href="#">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top flex-row">
+            <a class="navbar-brand d-none d-sm-block" href="#">
                 <img src="assets/images/logo.png" alt="Logo" class="responsive-img logo img-fluid">
+            </a>
+            <a class="navbar-brand d-sm-none" href="#">
+                <img src="assets/images/logo-sm.png" alt="Logo" class="responsive-img logo img-fluid">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -29,6 +32,9 @@
                     </li>
                     <li class="nav-item uppercase">
                         <a class="nav-link" href="#"><span>Music</span></a>
+                    </li>
+                    <li class="nav-item uppercase">
+                        <a class="nav-link" href="#"><span>Merch</span></a>
                     </li>
                     <li class="nav-item uppercase">
                         <a class="nav-link" href="#"><span>Video</span></a>
@@ -58,7 +64,7 @@
                     </div>
                 </div>
                 <div class="col-sm-6">
-                    <img src="assets/images/intheend.jpg" alt="In The End Album Cover" class="album-cover">
+                    <img src="assets/images/intheend.jpg" alt="In The End Album Cover" class="album-cover img-fluid">
                 </div>
             </div>
             <div class="row">
@@ -215,7 +221,7 @@
         </div>
         <!-- Bootstrap table -->
         <table class="table table-dark tour-table">
-            <caption>List of Cranberries Shows</caption>
+            <caption class="sr-only">List of Cranberries Shows</caption>
             <thead>
                 <tr>
                     <th scope="col">Date</th>
@@ -259,17 +265,62 @@
         </table>
     </section>
 
-    <footer class="container-fluid">
+    <footer class="container-fluid bg-dark">
         <div class="social-content-container">
             <div class="row">
-                <div class="col-sm-4">
-
+                <div class="col-sm-3">
+                    <h3 class="uppercase footer-heading">Social Links</h3>
+                    <ul class="list-inline social-links">
+                        <li class="list-inline-item">
+                            <a href="https://www.facebook.com/TheCranberries/">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                <span class="sr-only">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.instagram.com/thecranberries">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                <span class="sr-only">Instagram</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://twitter.com/The_Cranberries">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                <span class="sr-only">Twitter</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-sm-4">
-
+                <div class="col-sm-6">
+                    <h3 class="uppercase footer-heading"><i class="fa fa-envelope" aria-hidden="true"></i> Sign up for news about the band</h3>
+                    <div class="row justify-content-center mb-4 col-sm">
+                        <form class="form-inline" onsubmit="myFunction()">
+                            <div class="form-group mx-sm-3">
+                                <input type="email" class="form-control form-control-lg" id="signupemail" placeholder="Email" size="55" required>
+                            </div>
+                            <input type="submit" value="Submit" class="btn btn-dark">
+                        </form>
+                    </div>
                 </div>
-                <div class="col-sm-4">
-
+                <div class="col-sm-3">
+                    <h3 class="uppercase footer-heading">Extra Links</h3>
+                    <ul class="list-inline social-links">
+                        <li class="list-inline-item">
+                            <a href="#">
+                                Privacy Policy
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                Cookies Policy
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                Terms & Conditions
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

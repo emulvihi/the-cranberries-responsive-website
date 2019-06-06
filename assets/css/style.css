@@ -19,7 +19,12 @@ body {
 /* --------------------------------- Nav Bar */
 
 .navbar {
-    flex-wrap: nowrap;
+    padding: 8px;
+    width: 100%;
+}
+
+.navbar-brand {
+    margin: 0;
 }
 
 .nav-item {
@@ -55,7 +60,7 @@ body {
 .header-img {
     height: 100vh;
     width: 100%;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/header-background.jpg') no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/header-background.jpg') no-repeat center center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -125,7 +130,7 @@ body {
 /* --------------------------------- Section Containers */
 
 .container-wrapper--about {
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/about-background.jpg') no-repeat top right;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/about-background.jpg') no-repeat top right;
     background-attachment: fixed;
     background-size: cover;
     -webkit-background-size: cover;
@@ -134,7 +139,7 @@ body {
 }
 
 .container-wrapper--music {
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/music-background.jpg') no-repeat top right;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/music-background.jpg') no-repeat top right;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -142,7 +147,7 @@ body {
 }
 
 .container-wrapper--merch {
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/video-background.jpg') no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/video-background.jpg') no-repeat center center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -150,7 +155,7 @@ body {
 }
 
 .container-wrapper--video {
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/video-background.jpg') no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/video-background.jpg') no-repeat center center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -158,20 +163,22 @@ body {
 }
 
 .container-wrapper--tour {
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/tour-background.jpg') no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/tour-background.jpg') no-repeat top center;
     background-attachment: fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    padding-bottom: 40px;
 }
 
-.about-content-container, 
+.about-content-container,
 .music-content-container,
 .merch-content-container,
 .video-content-container,
-.tour-content-container {
-    padding: 95px 40px 95px 40px;
+.tour-content-container,
+.social-content-container {
+    padding: 60px 40px 60px 40px;
 }
 
 /* --------------------------------- About */
@@ -197,9 +204,9 @@ body {
     padding-bottom: 40px;
 }
 
-.music-player{
-    padding-bottom:4%; 
-    padding-top:5%;
+.music-player {
+    padding-bottom: 4%;
+    padding-top: 5%;
     width: 100%;
     margin: auto;
     border: none;
@@ -212,20 +219,20 @@ body {
     font-weight: bold;
 }
 
-.dropdown-menu{
+.dropdown-menu {
     background-color: black;
 }
 
-.dropdown-item{
+.dropdown-item {
     background-color: black;
     color: #dbc7bd;
     text-align: center;
     text-transform: uppercase;
 }
 
-.dropdown-item:hover{
+.dropdown-item:hover {
     color: rgb(237, 227, 222);
-    background-color: rgb(89, 89, 89);    
+    background-color: rgb(89, 89, 89);
 }
 
 /* --------------------------------- Merch */
@@ -244,7 +251,6 @@ body {
     text-transform: uppercase;
     text-align: center;
     margin: auto;
-    padding-bottom: 40px;
 }
 
 .video-container {
@@ -264,6 +270,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+    padding-bottom: 40px;
 }
 
 /* --------------------------------- Tour */
@@ -271,5 +278,11 @@ body {
 .tour-table {
     width: 60%;
     margin: auto;
-
 }
+
+/* --------------------------------- Footer */
+
+.footer-heading {
+    padding-bottom: 20px;
+}
+
