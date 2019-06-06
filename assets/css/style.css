@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+@font-face {
+    font-family: "logo-font";
+    src: url(../fonts/logo-font.ttf) format("truetype");
+}
 
 /* --------------------------------- Body */
 
 body {
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    color: #fff;
 }
 
 .uppercase {
@@ -13,8 +18,8 @@ body {
 
 /* --------------------------------- Nav Bar */
 
-.logo {
-    height: 66px;
+.navbar {
+    flex-wrap: nowrap;
 }
 
 .nav-item {
@@ -48,8 +53,223 @@ body {
 /* --------------------------------- Header */
 
 .header-img {
-    background: url('assets/images/header-background.jpg') no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/header-background.jpg') no-repeat center center;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
-/* --------------------------------- Footer */
+.album-cover {
+    max-height: 500px;
+    top: 50%;
+    transform: translateY(50%);
+}
+
+.buy-album {
+    display: block;
+    margin: auto;
+    top: 100%;
+    transform: translateY(100%);
+}
+
+/* --------------------------------- Band Name */
+
+.perspective-text {
+    color: #fff;
+    font-family: 'logo-font', Arial;
+    font-size: 60px;
+    font-weight: 400;
+    margin-top: 40%;
+}
+
+.perspective-line {
+    height: 80px;
+    overflow: hidden;
+    position: relative;
+}
+
+.perspective-line p {
+    margin: 0;
+    height: 80px;
+    line-height: 80px;
+    transition: all 0.5s ease-in-out;
+}
+
+.perspective-line:nth-child(odd) {
+    transform: skew(60deg, -30deg) scaleY(0.667);
+}
+
+.perspective-line:nth-child(even) {
+    transform: skew(0deg, -30deg) scaleY(1.333);
+}
+
+.perspective-text:hover p {
+    transform: translate(0, -80px);
+}
+
+.perspective-line:nth-child(1) {
+    left: 29px;
+}
+
+.perspective-line:nth-child(2) {
+    left: 58px;
+}
+
+.perspective-line:nth-child(3) {
+    left: 87px;
+}
+
+/* --------------------------------- Section Containers */
+
+.container-wrapper--about {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/about-background.jpg') no-repeat top right;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.container-wrapper--music {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/music-background.jpg') no-repeat top right;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.container-wrapper--merch {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/video-background.jpg') no-repeat center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.container-wrapper--video {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/video-background.jpg') no-repeat center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.container-wrapper--tour {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/tour-background.jpg') no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.about-content-container, 
+.music-content-container,
+.merch-content-container,
+.video-content-container,
+.tour-content-container {
+    padding: 95px 40px 95px 40px;
+}
+
+/* --------------------------------- About */
+
+.about-heading {
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+.bio-content {
+    text-align: left;
+    padding: 20px;
+}
+
+/* --------------------------------- Music */
+
+.music-heading {
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+.music-player{
+    padding-bottom:4%; 
+    padding-top:5%;
+    width: 100%;
+    margin: auto;
+    border: none;
+}
+
+.buy-btn {
+    width: 100%;
+    max-width: 190px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.dropdown-menu{
+    background-color: black;
+}
+
+.dropdown-item{
+    background-color: black;
+    color: #dbc7bd;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.dropdown-item:hover{
+    color: rgb(237, 227, 222);
+    background-color: rgb(89, 89, 89);    
+}
+
+/* --------------------------------- Merch */
+
+.merch-heading {
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+
+/* --------------------------------- Video */
+
+.video-heading {
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+.video-container {
+    height: 0;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.video-container-ratio {
+    padding-bottom: 45%;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* --------------------------------- Tour */
+
+.tour-table {
+    width: 60%;
+    margin: auto;
+
+}

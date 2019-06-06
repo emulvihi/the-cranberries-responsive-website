@@ -12,44 +12,267 @@
 </head>
 
 <body>
-    <!-- Nav Bar -->
-    <!-- Bootstrap Nav Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#">
-                <img src="assets/images/logo.png" alt="Logo" class="responsive-img logo">
+    <header>
+        <!-- Nav Bar -->
+        <!-- Bootstrap Nav Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.png" alt="Logo" class="responsive-img logo img-fluid">
             </a>
-        <button class="navbar-toggler mr-4" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-        <div class="collapse navbar-collapse mr-4" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link uppercase" href="#"><span>About</span></a>
-                </li>
-                <li class="nav-item uppercase">
-                    <a class="nav-link" href="#"><span>Music</span></a>
-                </li>
-                <li class="nav-item uppercase">
-                    <a class="nav-link" href="#"><span>Video</span></a>
-                </li>
-                <li class="nav-item uppercase">
-                    <a class="nav-link" href="#"><span>Tour</span></a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <header>
-        <div class="header-img">
-            
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link uppercase" href="#"><span>About</span></a>
+                    </li>
+                    <li class="nav-item uppercase">
+                        <a class="nav-link" href="#"><span>Music</span></a>
+                    </li>
+                    <li class="nav-item uppercase">
+                        <a class="nav-link" href="#"><span>Video</span></a>
+                    </li>
+                    <li class="nav-item uppercase">
+                        <a class="nav-link" href="#"><span>Tour</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="article header-img">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="perspective-text">
+                        <div class="perspective-line">
+                            <p></p>
+                            <p>Available for</p>
+                        </div>
+                        <div class="perspective-line">
+                            <p>The Cranberries</p>
+                            <p>purchase now</p>
+                        </div>
+                        <div class="perspective-line">
+                            <p>In The End</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <img src="assets/images/intheend.jpg" alt="In The End Album Cover" class="album-cover">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <button class="buy-album">Buy Now</button>
+                </div>
+            </div>
         </div>
     </header>
 
-    <section>
 
+    <!-- About -->
+    <section class="container-wrapper--about" id="about">
+        <div class="container-fluid about-content-container">
+            <div class="col-lg-6">
+                <h2 class="justify-content-center about-heading"><i class="fa fa-info-circle" aria-hidden="true"></i> About</h2>
+                <div class="row bio-content">
+                    <p>Many bands aspire to be timeless, or have a sound that transcends the whims of musical fashion. But The Cranberries are one of the few to have achieved that. Play one of the Irish rock group’s early anthems such as “Linger” or “Dreams”,
+                        and they sound as fresh - and deliver as much of an emotional sucker-punch - as when they captured a generation’s hearts in the 1990s.</p>
+
+                    <p>Now, nearly 30 years after the quartet of singer/songwriter and musician Dolores O’Riordan, co-songwriter and lead guitarist Noel Hogan, bassist Mike Hogan and drummer Fergal Lawler first appeared, they are returning with their eighth
+                        album In the End. After the sad and unexpected passing of Dolores on January 15th 2018, it will be their last - and is among the most complete works they have ever produced. </p>
+
+                    <p>It’s remarkable to look back and think just how how much of a cultural force The Cranberries have been, not only in the Ireland, UK and US, but across the globe: over their career, they have sold more than 40 million albums, making
+                        them one of the world’s biggest rock acts, as well as a staple on TV and film soundtracks. Through all their success, though, they have never compromised on their key trait: an honesty and directness that cuts to the soul. </p>
+
+                    <p>Central to their expression of emotional truth, of course, has been Dolores’ inimitable voice. It was an instrument that could be angelically soft or blisteringly angry to equally stunning effect - and was a match for opera legend
+                        Luciano Pavarotti when they duetted on an enduringly stunning rendition of Ave Maria in 1995.</p>
+
+                    <p>But the band’s power has also come from their gliding melodies and Dolores’ unvarnished lyrics, which were never less than absolutely sincere, whether she was writing about personal relationships or political violence - they all came
+                        back to “how human beings treat each other,” as she once described. “She truly didn’t really care what people thought about what she was going to say” says Noel. “It was a case of ‘If I feel strongly enough about this, I’m going
+                        to write about it, and whatever way the chips may fall, so be it. If I get slated for it, so be it.’”</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
 
+    <!-- Music -->
+    <section class="container-wrapper--music" id="music">
+        <div class="container-fluid music-content-container">
+            <h2 class="justify-content-center music-heading"><i class="fa fa-music" aria-hidden="true"></i> Music</h2>
+            <div class="container">
+
+                <!-- Row 1 -->
+                <div class="row grid-container">
+                    <!-- Column 1 -->
+                    <div class="col-sm">
+                        <!--Album Image-->
+                        <img src="assets/images/no-need-to-argue.jpg" alt="The Cranberries Album: No Need to Argue" class="img-fluid" data-toggle="modal" data-target="#tidal">
+                        <!-- Spotify -->
+                        <iframe class="music-player" src="https://open.spotify.com/embed/album/5GugLrmYMl5VRoe2zNgLGp" width="500" height="125"></iframe>
+                        <!-- Buy Links -->
+                        <div class="dropdown">
+                            <button class="buy-btn btn btn-dark btn-lg dropdown-toggle" data-toggle="dropdown">
+                        Buy Now
+                    </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="https://www.amazon.com/No-Need-Argue-Cranberries/dp/B000001E7M" target="_blank">Amazon</a>
+                                <a class="dropdown-item" href="https://music.apple.com/us/album/no-need-to-argue/1440924576" target="_blank">iTunes</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div class="col-sm">
+                        <!--Album Image-->
+                        <img src="assets/images/to-the-faithful-departed.jpg" alt="The Cranberries Album: To the Faithful Departed" class="img-fluid" />
+                        <!-- Spotify -->
+                        <iframe class="music-player" src="https://open.spotify.com/embed/album/6re8Qh8GMzxH92LO1xj2jU" width="500" height="125"></iframe>
+                        <!-- Buy Links -->
+                        <div class="dropdown">
+                            <button class="buy-btn btn btn-dark btn-lg dropdown-toggle" data-toggle="dropdown">
+                        Buy Now
+                    </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="https://www.amazon.co.uk/Faithful-Departed-Cranberries/dp/B000001E9I" target="_blank">Amazon</a>
+                                <a class="dropdown-item" href="https://music.apple.com/ca/album/to-the-faithful-departed/1440850688" target="_blank">iTunes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="row grid-container">
+                    <!-- Column 1 -->
+                    <div class="col-sm mt-4">
+                        <!--Album Image-->
+                        <img src="assets/images/bury-the-hatchet.jpg" alt="The Cranberries Album: Bury the Hatchet" class="img-fluid" />
+                        <!-- Spotify -->
+                        <iframe class="music-player" src="https://open.spotify.com/embed/album/2v9PjvIkQVnyQdtD1iQD7e" width="500" height="125"></iframe>
+                        <!-- Buy Links -->
+                        <div class="dropdown">
+                            <button class="buy-btn btn btn-dark btn-lg dropdown-toggle" data-toggle="dropdown">
+                        Buy Now
+                    </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="https://www.amazon.com/Bury-Hatchet-Cranberries/dp/B00000IYYL" target="_blank">Amazon</a>
+                                <a class="dropdown-item" href="https://music.apple.com/ca/album/bury-the-hatchet/1440923969" target="_blank">iTunes</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div class="col-sm mt-4">
+                        <!--Album Image-->
+                        <img src="assets/images/intheend.jpg" alt="The Cranberries Album: In The End" class="img-fluid" />
+                        <!-- Spotify -->
+                        <iframe class="music-player" src="https://open.spotify.com/embed/album/6HNTsQFMdG9XdQ4ROCG995" width="500" height="125"></iframe>
+                        <!-- Buy Links -->
+                        <div class="dropdown">
+                            <button class="buy-btn btn btn-dark btn-lg dropdown-toggle" data-toggle="dropdown">
+                        Buy Now
+                    </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="https://www.amazon.com/End-Deluxe-Cranberries/dp/B07MM5X2ZJ" target="_blank">Amazon</a>
+                                <a class="dropdown-item" href="https://music.apple.com/ca/album/in-the-end/1448776585" target="_blank">iTunes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Bootstrap Grid -->
+
+        </div>
+    </section>
+
+    <!-- Merch -->
+    <section class="container-wrapper--merch" id="merch">
+        <div class="container-fluid merch-content-container">
+            <h2 class="justify-content-center merch-heading"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Merch</h2>
+        </div>
+    </section>
+
+    <!-- Video -->
+    <section class="container-wrapper--video" id="video">
+        <div class="container-fluid video-content-container">
+            <h2 class="justify-content-center video-heading"><i class="fa fa-youtube-play" aria-hidden="true"></i> Video</h2>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+            </div>
+            <div class="col-sm-8 video-container video-container-ratio">
+                <iframe src="https://www.youtube.com/embed/8MuhFxaT7zo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col-sm-2">
+            </div>
+        </div>
+    </section>
+
+    <section class="container-wrapper--tour" id="video">
+        <div class="container-fluid tour-content-container">
+            <h2 class="container-fluid tour-heading"><i class="fa fa-bus" aria-hidden="true"></i> Tour</h2>
+        </div>
+        <!-- Bootstrap table -->
+        <table class="table table-dark tour-table">
+            <caption>List of Cranberries Shows</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Date</th>
+                    <th scope="col">Venue</th>
+                    <th scope="col">Location</th>
+                    <th scope="col">Tickets</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">20 May 2017</th>
+                    <td>London Palladium</td>
+                    <td>London, UK</td>
+                    <td><button class="btn btn-secondary disabled" aria-disabled="true">SOLD OUT</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">02 June 2017</th>
+                    <td>Cité des Congrès</td>
+                    <td>Nantes, France</td>
+                    <td><button class="btn btn-secondary disabled" aria-disabled="true">SOLD OUT</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">09 June 2017</th>
+                    <td>Salle Erasme, PMC</td>
+                    <td>Strasbourg, France</td>
+                    <td><button class="btn btn-secondary disabled" aria-disabled="true">SOLD OUT</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">23 June 2017</th>
+                    <td>Postepay Sound</td>
+                    <td>Padua, Italy</td>
+                    <td><button class="btn btn-secondary disabled" aria-disabled="true">SOLD OUT</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">05 August 2017</th>
+                    <td>Starlite Auditorio</td>
+                    <td>Marbella, Spain</td>
+                    <td><button class="btn btn-secondary disabled" aria-disabled="true">SOLD OUT</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer class="container-fluid">
+        <div class="social-content-container">
+            <div class="row">
+                <div class="col-sm-4">
+
+                </div>
+                <div class="col-sm-4">
+
+                </div>
+                <div class="col-sm-4">
+
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
