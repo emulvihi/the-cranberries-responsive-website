@@ -45,35 +45,74 @@
                 </ul>
             </div>
         </nav>
+        <!-- End Bootstrap Nav Bar -->
 
-        <div class="article header-img">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="perspective-text">
-                        <div class="perspective-line">
-                            <p></p>
-                            <p>Available for</p>
+    </header>
+
+    <section class="container-wrapper--landing" id="landing">
+        <!--<div class="article">-->
+        <!--    <div class="row header-img">-->
+        <!--        <div class="col-sm-6">-->
+        <!--            <div class="perspective-text">-->
+        <!--                <div class="perspective-line">-->
+        <!--                    <p></p>-->
+        <!--                    <p>Available for</p>-->
+        <!--                </div>-->
+        <!--                <div class="perspective-line">-->
+        <!--                    <p>The Cranberries</p>-->
+        <!--                    <p>purchase now</p>-->
+        <!--                </div>-->
+        <!--                <div class="perspective-line">-->
+        <!--                    <p>In The End</p>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--        <div class="col-sm-6">-->
+        <!--            <img src="assets/images/intheend.jpg" alt="In The End Album Cover" class="album-cover img-fluid">-->
+        <!--        </div>-->
+        <!--    </div>-->
+        <!--</div>-->
+        <!--Bootstrap Carousel-->
+        <div class="container-fluid landing-content-container">
+            <div class="no-padding">
+                <div class="carousel slide" id="carouselHeader" data-ride="carousel" data-wrap="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" id="carousel-img1">
+                            <img src="assets/images/carousel1.jpg" alt="First Slide" class="d-block w-100 container-fluid">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3 class="carousel-caption">New Album</h3>
+                                <h2 class="carousel-caption">In the end</h2>
+                                <div class="dropdown">
+                                    <button class="buy-btn btn btn-dark btn-lg dropdown-toggle" data-toggle="dropdown">
+                                    Buy Now
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="https://www.amazon.com/End-Deluxe-Cranberries/dp/B07MM5X2ZJ" target="_blank">Amazon</a>
+                                        <a class="dropdown-item" href="https://music.apple.com/ca/album/in-the-end/1448776585" target="_blank">iTunes</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="perspective-line">
-                            <p>The Cranberries</p>
-                            <p>purchase now</p>
+                        <div class="carousel-item" id="carousel-img2">
+                            <img src="assets/images/carousel2.png" alt="Second Slide" class="d-block w-100 container-fluid">
                         </div>
-                        <div class="perspective-line">
-                            <p>In The End</p>
+                        <div class="carousel-item" id="carousel-img3">
+                            <img src="assets/images/carousel3.jpg" alt="Third Slide" class="d-block w-100 container-fluid">
                         </div>
                     </div>
+                    <a class="carousel-control-prev" href="#carouselHeader" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselHeader" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
-                <div class="col-sm-6">
-                    <img src="assets/images/intheend.jpg" alt="In The End Album Cover" class="album-cover img-fluid">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <button class="buy-album">Buy Now</button>
-                </div>
+                <!--End Bootstrap Carousel-->
             </div>
         </div>
-    </header>
+    </section>
 
 
     <!-- About -->
@@ -159,8 +198,8 @@
                         <!-- Buy Links -->
                         <div class="dropdown">
                             <button class="buy-btn btn btn-dark btn-lg dropdown-toggle" data-toggle="dropdown">
-                        Buy Now
-                    </button>
+                            Buy Now
+                            </button>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="https://www.amazon.com/Bury-Hatchet-Cranberries/dp/B00000IYYL" target="_blank">Amazon</a>
                                 <a class="dropdown-item" href="https://music.apple.com/ca/album/bury-the-hatchet/1440923969" target="_blank">iTunes</a>
@@ -177,8 +216,8 @@
                         <!-- Buy Links -->
                         <div class="dropdown">
                             <button class="buy-btn btn btn-dark btn-lg dropdown-toggle" data-toggle="dropdown">
-                        Buy Now
-                    </button>
+                            Buy Now
+                            </button>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="https://www.amazon.com/End-Deluxe-Cranberries/dp/B07MM5X2ZJ" target="_blank">Amazon</a>
                                 <a class="dropdown-item" href="https://music.apple.com/ca/album/in-the-end/1448776585" target="_blank">iTunes</a>
@@ -193,11 +232,11 @@
     </section>
 
     <!-- Merch -->
-    <section class="container-wrapper--merch" id="merch">
-        <div class="container-fluid merch-content-container">
-            <h2 class="justify-content-center merch-heading"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Merch</h2>
-        </div>
-    </section>
+    <!--<section class="container-wrapper--merch" id="merch">-->
+    <!--    <div class="container-fluid merch-content-container">-->
+    <!--        <h2 class="justify-content-center merch-heading"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Merch</h2>-->
+    <!--    </div>-->
+    <!--</section>-->
 
     <!-- Video -->
     <section class="container-wrapper--video" id="video">
@@ -208,7 +247,7 @@
             <div class="col-sm-2">
             </div>
             <div class="col-sm-8 video-container video-container-ratio">
-                <iframe src="https://www.youtube.com/embed/8MuhFxaT7zo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/h1lMxX8doSU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="col-sm-2">
             </div>
