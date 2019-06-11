@@ -22,11 +22,49 @@ body {
 
 h2 {
     position: relative;
+    text-shadow: 1px 1px 2px black;
+    font-family: 'logo-font', 'Roboto', Arial, sans-serif;
+    font-size: 50px;
 }
 
 h2 span {
     position: absolute;
-    top: -150px;
+    top: -130px;
+}
+
+/* --------------------------------- Button */
+
+.btn-dark {
+    background-color: #964B35;
+    font-family: 'Roboto', Arial, sans-serif;
+    border-color: #964B35;
+    font-size: 22px;
+}
+
+.btn-dark:hover {
+    background-color: #633324;
+    border-color: #633324;
+}
+
+.btn-dark:not(:disabled):not(.disabled).active, .btn-dark:not(:disabled):not(.disabled):active, .show>.btn-dark.dropdown-toggle {
+    background-color: #633324;
+    border-color: #633324;
+}
+
+.dropdown-menu {
+    background-color: #964B35;
+}
+
+.dropdown-item {
+    background-color: #964B35;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.dropdown-item:hover {
+    color: #fff;
+    background-color: #633324;
 }
 
 /* --------------------------------- Nav Bar */
@@ -191,7 +229,7 @@ h2 span {
 /* --------------------------------- Section Containers */
 
 .container-wrapper--about {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/about-background.jpg') no-repeat top right;
+    background: linear-gradient(rgba(99, 51, 36, 0.5), rgba(99, 51, 36, 0.5)), url('../images/about-background.jpg') no-repeat top right;
     background-attachment: fixed;
     background-size: cover;
     -webkit-background-size: cover;
@@ -208,7 +246,7 @@ h2 span {
 }
 
 .container-wrapper--merch {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/video-background.jpg') no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/Cranberries-1996-slide.jpg') no-repeat center center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -216,7 +254,7 @@ h2 span {
 }
 
 .container-wrapper--video {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/video-background.jpg') no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/The-Cranberries-920x584.jpg') no-repeat center center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -243,7 +281,7 @@ h2 span {
 }
 
 .container-wrapper--contact {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/music-background.jpg') no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/oriordan.jpeg') no-repeat center center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -278,10 +316,8 @@ h2 span {
 .bio-content {
     text-align: left;
     padding: 20px;
-}
-
-.profile-pics-container {
-    margin-top: 15%;
+    background-color: rgba(52, 58, 64, 0.8);
+    border-radius: 20px;
 }
 
 .profile-pics {
@@ -349,22 +385,6 @@ h2 span {
     max-width: 190px;
     box-sizing: border-box;
     font-weight: bold;
-}
-
-.dropdown-menu {
-    background-color: black;
-}
-
-.dropdown-item {
-    background-color: black;
-    color: #dbc7bd;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.dropdown-item:hover {
-    color: rgb(237, 227, 222);
-    background-color: rgb(89, 89, 89);
 }
 
 /* --------------------------------- Merch */
@@ -448,8 +468,13 @@ h2 span {
     margin: auto;
 }
 
+.form-container h3 {
+    text-shadow: 1px 1px 2px black;
+}
+
 form label {
     font-size: 22px;
+    text-shadow: 1px 1px 2px black;
 }
 
 .duration-select {
@@ -484,6 +509,13 @@ form label {
 @media only screen and (min-width: 576px) {
     #carouselHeader {
         margin-top: 92px;
+    }
+    h2 span {
+        position: absolute;
+        top: -150px;
+    }
+    .profile-pics-container {
+        margin-top: 15%;
     }
 }
 
