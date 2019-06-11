@@ -20,6 +20,15 @@ body {
     margin: 0;
 }
 
+h2 {
+    position: relative;
+}
+
+h2 span {
+    position: absolute;
+    top: -150px;
+}
+
 /* --------------------------------- Nav Bar */
 
 .navbar {
@@ -292,7 +301,7 @@ body {
     border-radius: 50%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #3B2B46;
+    background-color: #964B35;
     z-index: 2;
     margin: auto;
     margin-top: 30px;
@@ -439,10 +448,35 @@ body {
     margin: auto;
 }
 
+form label {
+    font-size: 22px;
+}
+
+.duration-select {
+    padding-left: 0;
+}
+
+.venue-size {
+    padding-right: 0;
+}
+
 /* --------------------------------- Footer */
 
 .footer-heading {
     padding-bottom: 20px;
+}
+
+.signup-btn {
+    background-color: #964B35;
+}
+
+.social-links li a i {
+    font-size: 32px;
+    color: #fff;
+}
+
+.social-links li a i:hover {
+    color: #964B35;
 }
 
 /* --------------------------------- Media Queries */
@@ -465,6 +499,10 @@ body {
     }
     .card-col {
         margin-top: 0;
+    }
+    .form-container {
+        width: 60%;
+        margin: auto;
     }
 }
 

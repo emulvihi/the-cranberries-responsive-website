@@ -27,8 +27,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link uppercase" href="#about"><span>About</span></a>
+                    <li class="nav-item uppercase">
+                        <a class="nav-link" href="#tour"><span>Tour</span></a>
                     </li>
                     <li class="nav-item uppercase">
                         <a class="nav-link" href="#music"><span>Music</span></a>
@@ -39,8 +39,8 @@
                     <li class="nav-item uppercase">
                         <a class="nav-link" href="#video"><span>Video</span></a>
                     </li>
-                    <li class="nav-item uppercase">
-                        <a class="nav-link" href="#tour"><span>Tour</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link uppercase" href="#about"><span>Bio</span></a>
                     </li>
                     <li class="nav-item uppercase">
                         <a class="nav-link" href="#news"><span>News</span></a>
@@ -120,86 +120,61 @@
         </div>
     </section>
 
-
-    <!-- About -->
-    <section class="container-wrapper--about" id="about">
-        <div class="container-fluid about-content-container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <h2 class="justify-content-center about-heading"><i class="fa fa-info-circle" aria-hidden="true"></i> About</h2>
-                    <div class="bio-content">
-                        <p>Many bands aspire to be timeless, or have a sound that transcends the whims of musical fashion. But The Cranberries are one of the few to have achieved that. Play one of the Irish rock group’s early anthems such as “Linger” or
-                            “Dreams”, and they sound as fresh - and deliver as much of an emotional sucker-punch - as when they captured a generation’s hearts in the 1990s.</p>
-
-                        <p>Now, nearly 30 years after the quartet of singer/songwriter and musician Dolores O’Riordan, co-songwriter and lead guitarist Noel Hogan, bassist Mike Hogan and drummer Fergal Lawler first appeared, they are returning with their
-                            eighth album In the End. After the sad and unexpected passing of Dolores on January 15th 2018, it will be their last - and is among the most complete works they have ever produced. </p>
-
-                        <p>It’s remarkable to look back and think just how how much of a cultural force The Cranberries have been, not only in the Ireland, UK and US, but across the globe: over their career, they have sold more than 40 million albums, making
-                            them one of the world’s biggest rock acts, as well as a staple on TV and film soundtracks. Through all their success, though, they have never compromised on their key trait: an honesty and directness that cuts to the soul.
-                        </p>
-
-                        <p>Central to their expression of emotional truth, of course, has been Dolores’ inimitable voice. It was an instrument that could be angelically soft or blisteringly angry to equally stunning effect - and was a match for opera legend
-                            Luciano Pavarotti when they duetted on an enduringly stunning rendition of Ave Maria in 1995.</p>
-
-                        <p>But the band’s power has also come from their gliding melodies and Dolores’ unvarnished lyrics, which were never less than absolutely sincere, whether she was writing about personal relationships or political violence - they all
-                            came back to “how human beings treat each other,” as she once described. “She truly didn’t really care what people thought about what she was going to say” says Noel. “It was a case of ‘If I feel strongly enough about this,
-                            I’m going to write about it, and whatever way the chips may fall, so be it. If I get slated for it, so be it.’”</p>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="profile-pics-container">
-                        <div class="row profile-pics-row">
-                            <div class="col profile-container">
-                                <img src="assets/images/dolores-oriordan-bio.jpg" alt="Dolores O'Riordan Headshot" class="profile-pics" id="dolores-pic"></img>
-                                <div class="profile-overlay">
-                                    <div class="hover-text">
-                                        <p>Dolores O'Riordan</p>
-                                        <h6>Lead Singer</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col profile-container">
-                                <img src="assets/images/noel-hogan-bio.jpg" alt="Noel Hogan Headshot" class="profile-pics" id="noel-pic"></img>
-                                <div class="profile-overlay">
-                                    <div class="hover-text">
-                                        <p>Noel Hogan</p>
-                                        <h6>Lead Guitarist</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row profile-pics-row" id="profile-row-2">
-                            <div class="col profile-container">
-                                <img src="assets/images/mike-hogan-bio.jpg" alt="Mike Hogan Headshot" class="profile-pics" id="mike-pic"></img>
-                                <div class="profile-overlay">
-                                    <div class="hover-text">
-                                        <p>Mike Hogan</p>
-                                        <h6>Bassist</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col profile-container">
-                                <img src="assets/images/fergal-lawler-bio.jpg" alt="Fergal Lawler Headshot" class="profile-pics" id="fergal-pic">
-                                <div class="profile-overlay">
-                                    <div class="hover-text">
-                                        <p>Fergal Lawler</p>
-                                        <h6>Drummer</h6>
-                                    </div>
-                                </div>
-                                </img>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Tour -->
+    <section class="container-wrapper--tour">
+        <div class="container-fluid tour-content-container">
+            <h2 class="container-fluid tour-heading"><i class="fa fa-bus" aria-hidden="true"></i><span id="tour"></span> Tour</h2>
+        </div>
+        <!-- Bootstrap table -->
+        <table class="table table-dark tour-table">
+            <caption class="sr-only">List of Cranberries Shows</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Date</th>
+                    <th scope="col">Venue</th>
+                    <th scope="col">Location</th>
+                    <th scope="col">Tickets</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">20 May 2017</th>
+                    <td>London Palladium</td>
+                    <td>London, UK</td>
+                    <td><button class="btn btn-secondary disabled" aria-disabled="true">SOLD OUT</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">02 June 2017</th>
+                    <td>Cité des Congrès</td>
+                    <td>Nantes, France</td>
+                    <td><button class="btn btn-secondary disabled" aria-disabled="true">SOLD OUT</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">09 June 2017</th>
+                    <td>Salle Erasme, PMC</td>
+                    <td>Strasbourg, France</td>
+                    <td><button class="btn btn-secondary disabled" aria-disabled="true">SOLD OUT</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">23 June 2017</th>
+                    <td>Postepay Sound</td>
+                    <td>Padua, Italy</td>
+                    <td><button class="btn btn-secondary disabled" aria-disabled="true">SOLD OUT</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">05 August 2017</th>
+                    <td>Starlite Auditorio</td>
+                    <td>Marbella, Spain</td>
+                    <td><button class="btn btn-secondary disabled" aria-disabled="true">SOLD OUT</button></td>
+                </tr>
+            </tbody>
+        </table>
     </section>
-
-
+    
     <!-- Music -->
-    <section class="container-wrapper--music" id="music">
+    <section class="container-wrapper--music">
         <div class="container-fluid music-content-container">
-            <h2 class="justify-content-center music-heading"><i class="fa fa-music" aria-hidden="true"></i> Music</h2>
+            <h2 class="justify-content-center music-heading"><i class="fa fa-music" aria-hidden="true"></i><span id="music"></span> Music</h2>
             <div class="container">
 
                 <!-- Row 1 -->
@@ -284,11 +259,11 @@
 
         </div>
     </section>
-
+    
     <!-- Merch -->
-    <section class="container-wrapper--merch" id="merch">
+    <section class="container-wrapper--merch">
         <div class="container-fluid merch-content-container">
-            <h2 class="justify-content-center merch-heading"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Merch</h2>
+            <h2 class="justify-content-center merch-heading"><i class="fa fa-shopping-basket" aria-hidden="true"></i><span id="merch"></span> Merch</h2>
             <div class="row card-row-1">
                 <div class="col-sm card-col">
                     <div class="card" style="width: 18rem;">
@@ -360,11 +335,11 @@
             </div>
         </div>
     </section>
-
+    
     <!-- Video -->
-    <section class="container-wrapper--video" id="video">
+    <section class="container-wrapper--video">
         <div class="container-fluid video-content-container">
-            <h2 class="justify-content-center video-heading"><i class="fab fa-youtube" aria-hidden="true"></i> Video</h2>
+            <h2 class="justify-content-center video-heading"><i class="fab fa-youtube" aria-hidden="true"></i><span id="video"></span> Video</h2>
         </div>
         <div class="row">
             <div class="col-sm-2">
@@ -377,125 +352,165 @@
         </div>
     </section>
 
-    <section class="container-wrapper--tour" id="tour">
-        <div class="container-fluid tour-content-container">
-            <h2 class="container-fluid tour-heading"><i class="fa fa-bus" aria-hidden="true"></i> Tour</h2>
-        </div>
-        <!-- Bootstrap table -->
-        <table class="table table-dark tour-table">
-            <caption class="sr-only">List of Cranberries Shows</caption>
-            <thead>
-                <tr>
-                    <th scope="col">Date</th>
-                    <th scope="col">Venue</th>
-                    <th scope="col">Location</th>
-                    <th scope="col">Tickets</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">20 May 2017</th>
-                    <td>London Palladium</td>
-                    <td>London, UK</td>
-                    <td><button class="btn btn-secondary disabled" aria-disabled="true">SOLD OUT</button></td>
-                </tr>
-                <tr>
-                    <th scope="row">02 June 2017</th>
-                    <td>Cité des Congrès</td>
-                    <td>Nantes, France</td>
-                    <td><button class="btn btn-secondary disabled" aria-disabled="true">SOLD OUT</button></td>
-                </tr>
-                <tr>
-                    <th scope="row">09 June 2017</th>
-                    <td>Salle Erasme, PMC</td>
-                    <td>Strasbourg, France</td>
-                    <td><button class="btn btn-secondary disabled" aria-disabled="true">SOLD OUT</button></td>
-                </tr>
-                <tr>
-                    <th scope="row">23 June 2017</th>
-                    <td>Postepay Sound</td>
-                    <td>Padua, Italy</td>
-                    <td><button class="btn btn-secondary disabled" aria-disabled="true">SOLD OUT</button></td>
-                </tr>
-                <tr>
-                    <th scope="row">05 August 2017</th>
-                    <td>Starlite Auditorio</td>
-                    <td>Marbella, Spain</td>
-                    <td><button class="btn btn-secondary disabled" aria-disabled="true">SOLD OUT</button></td>
-                </tr>
-            </tbody>
-        </table>
+    <!-- About -->
+    <section class="container-wrapper--about">
+        <div class="container-fluid about-content-container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2 class="justify-content-center about-heading"><i class="fa fa-info-circle" aria-hidden="true"></i><span id="about"></span> Bio</h2>
+                    <div class="bio-content">
+                        <p>Many bands aspire to be timeless, or have a sound that transcends the whims of musical fashion. But The Cranberries are one of the few to have achieved that. Play one of the Irish rock group’s early anthems such as “Linger” or
+                            “Dreams”, and they sound as fresh - and deliver as much of an emotional sucker-punch - as when they captured a generation’s hearts in the 1990s.</p>
+
+                        <p>Now, nearly 30 years after the quartet of singer/songwriter and musician Dolores O’Riordan, co-songwriter and lead guitarist Noel Hogan, bassist Mike Hogan and drummer Fergal Lawler first appeared, they are returning with their
+                            eighth album In the End. After the sad and unexpected passing of Dolores on January 15th 2018, it will be their last - and is among the most complete works they have ever produced. </p>
+
+                        <p>It’s remarkable to look back and think just how how much of a cultural force The Cranberries have been, not only in the Ireland, UK and US, but across the globe: over their career, they have sold more than 40 million albums, making
+                            them one of the world’s biggest rock acts, as well as a staple on TV and film soundtracks. Through all their success, though, they have never compromised on their key trait: an honesty and directness that cuts to the soul.
+                        </p>
+
+                        <p>Central to their expression of emotional truth, of course, has been Dolores’ inimitable voice. It was an instrument that could be angelically soft or blisteringly angry to equally stunning effect - and was a match for opera legend
+                            Luciano Pavarotti when they duetted on an enduringly stunning rendition of Ave Maria in 1995.</p>
+
+                        <p>But the band’s power has also come from their gliding melodies and Dolores’ unvarnished lyrics, which were never less than absolutely sincere, whether she was writing about personal relationships or political violence - they all
+                            came back to “how human beings treat each other,” as she once described. “She truly didn’t really care what people thought about what she was going to say” says Noel. “It was a case of ‘If I feel strongly enough about this,
+                            I’m going to write about it, and whatever way the chips may fall, so be it. If I get slated for it, so be it.’”</p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="profile-pics-container">
+                        <div class="row profile-pics-row">
+                            <div class="col profile-container">
+                                <img src="assets/images/dolores-oriordan-bio.jpg" alt="Dolores O'Riordan Headshot" class="profile-pics" id="dolores-pic"></img>
+                                <div class="profile-overlay">
+                                    <div class="hover-text">
+                                        <p>Dolores O'Riordan</p>
+                                        <h6>Lead Singer</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col profile-container">
+                                <img src="assets/images/noel-hogan-bio.jpg" alt="Noel Hogan Headshot" class="profile-pics" id="noel-pic"></img>
+                                <div class="profile-overlay">
+                                    <div class="hover-text">
+                                        <p>Noel Hogan</p>
+                                        <h6>Lead Guitarist</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row profile-pics-row" id="profile-row-2">
+                            <div class="col profile-container">
+                                <img src="assets/images/mike-hogan-bio.jpg" alt="Mike Hogan Headshot" class="profile-pics" id="mike-pic"></img>
+                                <div class="profile-overlay">
+                                    <div class="hover-text">
+                                        <p>Mike Hogan</p>
+                                        <h6>Bassist</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col profile-container">
+                                <img src="assets/images/fergal-lawler-bio.jpg" alt="Fergal Lawler Headshot" class="profile-pics" id="fergal-pic">
+                                <div class="profile-overlay">
+                                    <div class="hover-text">
+                                        <p>Fergal Lawler</p>
+                                        <h6>Drummer</h6>
+                                    </div>
+                                </div>
+                                </img>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </section>
 
     <!-- News -->
-    <section class="container-wrapper--news" id="news">
+    <section class="container-wrapper--news">
         <div class="container-fluid news-content-container">
-            <h2 class="justify-content-center news-heading"><i class="far fa-newspaper" aria-hidden="true"></i> News</h2>
+            <h2 class="justify-content-center news-heading"><i class="far fa-newspaper" aria-hidden="true"></i><span id="news"></span> News</h2>
 
         </div>
     </section>
 
     <!-- Contact -->
-    <section class="container-wrapper--contact" id="contact">
-        <div class="container-fluid news-content-container">
-            <h2 class="justify-content-center contact-heading"><i class="far fa-comments" aria-hidden="true"></i> Contact</h2>
-
+    <section class="container-wrapper--contact">
+        <div class="container-fluid contact-content-container">
+            <h2 class="justify-content-center contact-heading"><i class="far fa-comments" aria-hidden="true"></i><span id="contact"></span> Contact</h2>
+            <div class="form-container mt-4">
+                <h3>Book the band for your own events</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="formEmail">Email Address</label>
+                        <input type="email" class="form-control" id="formEmail" placeholder="name@example.com" required>
+                    </div>
+                    <div class="row">
+                    <div class="form-group col-sm duration-select">
+                        <label for="durationSelect">Number of Nights</label>
+                        <select class="form-control" id="durationSelect">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-sm venue-size">
+                        <label for="venueSize">Venue Size</label>
+                        <select class="custom-select" id="venueSize">
+                            <option value="1">50-300</option>
+                            <option value="2">300-600</option>
+                            <option value="3">600-1000</option>
+                            <option value="4">1000-2000</option>
+                            <option value="5">2000+</option>
+                        </select>
+                    </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="textArea">Any Other Info</label>
+                        <textarea class="form-control" id="textArea" rows="3" placeholder="Let us know any other requirements or relevant info"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <div>
+                            <button type="submit" class="btn btn-dark btn-lg">Enquire</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
 
     <footer class="container-fluid bg-dark">
         <div class="social-content-container">
             <div class="row">
-                <div class="col-sm-3">
-                    <h3 class="uppercase footer-heading">Social Links</h3>
-                    <ul class="list-inline social-links">
-                        <li class="list-inline-item">
-                            <a href="https://www.facebook.com/TheCranberries/">
-                                <i class="fa fa-facebook" aria-hidden="true"></i>
-                                <span class="sr-only">Facebook</span>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="https://www.instagram.com/thecranberries">
-                                <i class="fa fa-instagram" aria-hidden="true"></i>
-                                <span class="sr-only">Instagram</span>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="https://twitter.com/The_Cranberries">
-                                <i class="fa fa-twitter" aria-hidden="true"></i>
-                                <span class="sr-only">Twitter</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm-6">
+                <div class="col-sm">
                     <h3 class="uppercase footer-heading"><i class="fa fa-envelope" aria-hidden="true"></i> Sign up for news about the band</h3>
                     <div class="row justify-content-center mb-4 col-sm">
                         <form class="form-inline" onsubmit="myFunction()">
                             <div class="form-group mx-sm-3">
                                 <input type="email" class="form-control form-control-lg" id="signupemail" placeholder="Email" size="55" required>
                             </div>
-                            <input type="submit" value="Submit" class="btn btn-dark">
+                            <input type="submit" value="Submit" class="btn btn-dark btn-lg signup-btn">
                         </form>
                     </div>
                 </div>
-                <div class="col-sm-3">
-                    <h3 class="uppercase footer-heading">Extra Links</h3>
+                <div class="col-sm">
                     <ul class="list-inline social-links">
                         <li class="list-inline-item">
-                            <a href="#">
-                                Privacy Policy
+                            <a href="https://www.facebook.com/TheCranberries/">
+                                <i class="fab fa-facebook" aria-hidden="true"></i>
+                                <span class="sr-only">Facebook</span>
                             </a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="#">
-                                Cookies Policy
+                            <a href="https://www.instagram.com/thecranberries">
+                                <i class="fab fa-instagram" aria-hidden="true"></i>
+                                <span class="sr-only">Instagram</span>
                             </a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="#">
-                                Terms & Conditions
+                            <a href="https://twitter.com/The_Cranberries">
+                                <i class="fab fa-twitter" aria-hidden="true"></i>
+                                <span class="sr-only">Twitter</span>
                             </a>
                         </li>
                     </ul>
