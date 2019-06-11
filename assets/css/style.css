@@ -396,14 +396,14 @@ h2 span {
     padding-bottom: 40px;
 }
 
-.card-col {
-    margin-top: 40px;
-}
+/*.card-row-1,*/
+/*.card-row-2 {*/
+/*    margin: auto;*/
+/*}*/
 
 .card {
     margin: auto;
     height: 100%;
-    /*position: relative;*/
     color: #000;
     font-family: 'logo-font', 'Roboto', Arial, sans-serif;
 }
@@ -411,11 +411,6 @@ h2 span {
 .visit-btn {
     margin-top: 40px;
 }
-
-/*.card-btn {*/
-/*    position: absolute;*/
-/*    bottom: 0;*/
-/*}*/
 
 /* --------------------------------- Video */
 
@@ -477,12 +472,9 @@ form label {
     text-shadow: 1px 1px 2px black;
 }
 
-.duration-select {
-    padding-left: 0;
-}
-
+.duration-select, 
 .venue-size {
-    padding-right: 0;
+    padding: 0;
 }
 
 /* --------------------------------- Footer */
@@ -491,17 +483,23 @@ form label {
     padding-bottom: 20px;
 }
 
-.signup-btn {
-    background-color: #964B35;
-}
-
 .social-links li a i {
-    font-size: 32px;
+    font-size: 45px;
     color: #fff;
+    padding: 12px;
+    transform: translateY(0%);
 }
 
 .social-links li a i:hover {
     color: #964B35;
+}
+
+.signup-btn {
+    margin: auto;
+}
+
+.footer-col-2 {
+    margin-top: 30px;
 }
 
 /* --------------------------------- Media Queries */
@@ -516,6 +514,15 @@ form label {
     }
     .profile-pics-container {
         margin-top: 15%;
+    }
+    .duration-select {
+        padding-right: 15px;
+    }
+    .venue-size {
+        padding-left: 15px;
+    }
+    .footer-col-1 {
+        margin-top: 0;
     }
 }
 
@@ -535,6 +542,9 @@ form label {
     .form-container {
         width: 60%;
         margin: auto;
+    }
+    .social-links {
+        transform: translateY(50%);
     }
 }
 
