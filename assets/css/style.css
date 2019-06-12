@@ -53,6 +53,7 @@ h2 span {
 
 .dropdown-menu {
     background-color: #964B35;
+    z-index: 12;
 }
 
 .dropdown-item {
@@ -65,6 +66,29 @@ h2 span {
 .dropdown-item:hover {
     color: #fff;
     background-color: #633324;
+}
+
+.down-btn {
+    background-color: rgba(150, 75, 53, 1);
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+}
+
+.down-btn:hover {
+    background-color: rgba(150, 75, 53, 0.7);
+}
+
+.jump-to-video-btn i {
+    color: #fff;
+    font-size: 30px;
+    padding-top: 5px;
+}
+
+/* --------------------------------- Hover Effects */
+
+.hvr-underline-from-center:before {
+    background: #343a40;
 }
 
 /* --------------------------------- Nav Bar */
@@ -115,7 +139,8 @@ h2 span {
     padding: 0;
 }
 
-#carousel-img2::before {
+#carousel-img-1::before,
+#carousel-img-2::before {
     content: '';
     position: absolute;
     top: 0;
@@ -128,103 +153,8 @@ h2 span {
 
 .carousel-caption {
     font-family: 'logo-font', 'Roboto', Arial, sans-serif;
+    padding-bottom: 50px;
 }
-
-/*.album-cover {*/
-
-/*    max-height: 500px;*/
-
-/*    top: 50%;*/
-
-/*    transform: translateY(50%);*/
-
-/*}*/
-
-/*.buy-album {*/
-
-/*    display: block;*/
-
-/*    margin: auto;*/
-
-/*    top: 100%;*/
-
-/*    transform: translateY(100%);*/
-
-/*}*/
-
-/* --------------------------------- Band Name */
-
-/*.perspective-text {*/
-
-/*    color: #fff;*/
-
-/*    font-family: 'logo-font', Arial;*/
-
-/*    font-size: 60px;*/
-
-/*    font-weight: 400;*/
-
-/*    margin-top: 40%;*/
-
-/*}*/
-
-/*.perspective-line {*/
-
-/*    height: 80px;*/
-
-/*    overflow: hidden;*/
-
-/*    position: relative;*/
-
-/*}*/
-
-/*.perspective-line p {*/
-
-/*    margin: 0;*/
-
-/*    height: 80px;*/
-
-/*    line-height: 80px;*/
-
-/*    transition: all 0.5s ease-in-out;*/
-
-/*}*/
-
-/*.perspective-line:nth-child(odd) {*/
-
-/*    transform: skew(60deg, -30deg) scaleY(0.667);*/
-
-/*}*/
-
-/*.perspective-line:nth-child(even) {*/
-
-/*    transform: skew(0deg, -30deg) scaleY(1.333);*/
-
-/*}*/
-
-/*.perspective-text:hover p {*/
-
-/*    transform: translate(0, -80px);*/
-
-/*}*/
-
-/*.perspective-line:nth-child(1) {*/
-
-/*    left: 29px;*/
-
-/*}*/
-
-/*.perspective-line:nth-child(2) {*/
-
-/*    left: 58px;*/
-
-/*}*/
-
-/*.perspective-line:nth-child(3) {*/
-
-/*    left: 87px;*/
-
-/*}*/
 
 /* --------------------------------- Section Containers */
 
@@ -248,6 +178,7 @@ h2 span {
 .container-wrapper--merch {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/Cranberries-1996-slide.jpg') no-repeat center center;
     background-size: cover;
+    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -530,6 +461,9 @@ form label {
     .card-row-2 {
         margin-top: 40px;
     }
+    #carouselHeader {
+        
+    }
 }
 
 @media only screen and (min-width: 992px) {
@@ -539,12 +473,18 @@ form label {
     .card-col {
         margin-top: 0;
     }
+    .profile-pics-container {
+        margin-top: 10%;
+    }
     .form-container {
         width: 60%;
         margin: auto;
     }
     .social-links {
         transform: translateY(50%);
+    }
+    .hvr-underline-from-center:before {
+        background: #964B35;
     }
 }
 

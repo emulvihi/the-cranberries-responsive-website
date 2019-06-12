@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>Document</title>
 </head>
@@ -16,10 +17,10 @@
         <!-- Nav Bar -->
         <!-- Bootstrap Nav Bar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top flex-row" id="nav">
-            <a class="navbar-brand d-none d-sm-block" href="#carouselHeader">
+            <a class="navbar-brand d-none d-sm-block" href="#Landing">
                 <img src="assets/images/logo.png" alt="Logo" class="responsive-img logo img-fluid">
             </a>
-            <a class="navbar-brand d-sm-none" href="#carouselHeader">
+            <a class="navbar-brand d-sm-none" href="#Landing">
                 <img src="assets/images/logo-sm.png" alt="Logo" class="responsive-img logo img-fluaid">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,25 +29,25 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto smooth-scroll">
                     <li class="nav-item uppercase">
-                        <a class="nav-link" href="#tour"><span>Tour</span></a>
+                        <a class="nav-link hvr-underline-from-center" href="#tour"><span>Tour</span></a>
                     </li>
                     <li class="nav-item uppercase">
-                        <a class="nav-link" href="#music"><span>Music</span></a>
+                        <a class="nav-link hvr-underline-from-center" href="#music"><span>Music</span></a>
                     </li>
                     <li class="nav-item uppercase">
-                        <a class="nav-link" href="#merch"><span>Merch</span></a>
+                        <a class="nav-link hvr-underline-from-center" href="#merch"><span>Merch</span></a>
                     </li>
                     <li class="nav-item uppercase">
-                        <a class="nav-link" href="#video"><span>Video</span></a>
+                        <a class="nav-link hvr-underline-from-center" href="#video"><span>Video</span></a>
                     </li>
                     <li class="nav-item uppercase">
-                        <a class="nav-link" href="#about"><span>Bio</span></a>
+                        <a class="nav-link hvr-underline-from-center" href="#about"><span>Bio</span></a>
                     </li>
+                    <!--<li class="nav-item uppercase">-->
+                    <!--    <a class="nav-link hvr-underline-from-center" href="#news"><span>News</span></a>-->
+                    <!--</li>-->
                     <li class="nav-item uppercase">
-                        <a class="nav-link" href="#news"><span>News</span></a>
-                    </li>
-                    <li class="nav-item uppercase">
-                        <a class="nav-link" href="#contact"><span>Contact</span></a>
+                        <a class="nav-link hvr-underline-from-center" href="#contact"><span>Contact</span></a>
                     </li>
                 </ul>
             </div>
@@ -55,39 +56,18 @@
 
     </header>
 
-    <section class="container-wrapper--landing" id="landing">
-        <!--<div class="article">-->
-        <!--    <div class="row header-img">-->
-        <!--        <div class="col-sm-6">-->
-        <!--            <div class="perspective-text">-->
-        <!--                <div class="perspective-line">-->
-        <!--                    <p></p>-->
-        <!--                    <p>Available for</p>-->
-        <!--                </div>-->
-        <!--                <div class="perspective-line">-->
-        <!--                    <p>The Cranberries</p>-->
-        <!--                    <p>purchase now</p>-->
-        <!--                </div>-->
-        <!--                <div class="perspective-line">-->
-        <!--                    <p>In The End</p>-->
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--        </div>-->
-        <!--        <div class="col-sm-6">-->
-        <!--            <img src="assets/images/intheend.jpg" alt="In The End Album Cover" class="album-cover img-fluid">-->
-        <!--        </div>-->
-        <!--    </div>-->
-        <!--</div>-->
+    <section class="container-wrapper--landing">
+        <h2><span id="Landing"></span></h2>
         <!--Bootstrap Carousel-->
         <div class="container-fluid landing-content-container">
             <div class="no-padding">
                 <div class="carousel slide" id="carouselHeader" data-ride="carousel" data-wrap="true">
                     <div class="carousel-inner">
-                        <div class="carousel-item active" id="carousel-img1">
+                        <div class="carousel-item active" id="carousel-img-1">
                             <img src="assets/images/carousel1.jpg" alt="First Slide" class="d-block w-100 container-fluid">
                             <div class="carousel-caption d-none d-md-block">
-                                <h3 class="carousel-caption">New Album</h3>
-                                <h2 class="carousel-caption">In the end</h2>
+                                <h3>New Album</h3>
+                                <h2>In the end</h2>
                                 <div class="dropdown">
                                     <button class="buy-btn btn btn-dark btn-lg dropdown-toggle" data-toggle="dropdown">
                                     Buy Now
@@ -99,11 +79,28 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item" id="carousel-img2">
+                        <div class="carousel-item" id="carousel-img-2">
                             <img src="assets/images/carousel2.png" alt="Second Slide" class="d-block w-100 container-fluid">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Summer Sale</h2>
+                                <div class="dropdown">
+                                    <a href="https://thecranberries.shopfirebrand.com/" class="buy-btn btn btn-dark btn-lg visit-btn" target="_blank"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Merch Store</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="carousel-item" id="carousel-img3">
+                        <div class="carousel-item" id="carousel-img-3">
                             <img src="assets/images/carousel3.jpg" alt="Third Slide" class="d-block w-100 container-fluid">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>New Video</h3>
+                                <h2>All Over Now</h2>
+                                <div class="jump-to-video-btn hvr-hang">
+                                    <a href="#video">
+                                    <button class="btn down-btn">
+                                    <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselHeader" role="button" data-slide="prev">
@@ -180,7 +177,7 @@
                 <!-- Row 1 -->
                 <div class="row grid-container">
                     <!-- Column 1 -->
-                    <div class="col-sm">
+                    <div class="col-sm mt-4">
                         <!--Album Image-->
                         <img src="assets/images/no-need-to-argue.jpg" alt="The Cranberries Album: No Need to Argue" class="img-fluid" data-toggle="modal" data-target="#tidal">
                         <!-- Spotify -->
@@ -198,7 +195,7 @@
                     </div>
 
                     <!-- Column 2 -->
-                    <div class="col-sm">
+                    <div class="col-sm mt-4">
                         <!--Album Image-->
                         <img src="assets/images/to-the-faithful-departed.jpg" alt="The Cranberries Album: To the Faithful Departed" class="img-fluid" />
                         <!-- Spotify -->
@@ -371,10 +368,6 @@
                             top 20 albums on the Billboard 200 chart (Everybody Else Is Doing It, So Why Can't We?; No Need to Argue, To the Faithful Departed, Bury the Hatchet, and Stars: The Best of 1992-2002) as well as having eight top 20 singles
                             on the Modern Rock Tracks chart ("Linger", "Dreams", "Zombie", "Ode to My Family", "Ridiculous Thoughts", "Salvation", "Free to Decide", and "Promises"). </p>
 
-                        <p>In early 2009, after a six-year hiatus, the Cranberries reunited and began a North American tour followed by shows in Latin America and Europe. The band recorded their sixth album Roses in May 2011, and released it in February
-                            2012. Something Else, an album covering many of the band's most popular songs along with new orchestral accompaniments provided by the Irish Chamber Orchestra, was released in April 2017. The album also included three new songs:
-                            "The Glory", "Rupture" and "Why?"</p>
-
                         <p>On 15 January 2018, lead singer Dolores O'Riordan was found dead of drowning in a London hotel room. She had recently arrived in London for a recording session. The Cranberries confirmed in September 2018 that they would not be
                             continuing as a band, releasing their final album In the End in April 2019 and disbanding afterward. Noel Hogan stated: “the Cranberries was the four of us. We don’t want to do this without Dolores. So we’re going to leave
                             it after this.”</p>
@@ -430,12 +423,12 @@
     </section>
 
     <!-- News -->
-    <section class="container-wrapper--news">
-        <div class="container-fluid news-content-container">
-            <h2 class="justify-content-center news-heading"><i class="far fa-newspaper" aria-hidden="true"></i><span id="news"></span> News</h2>
+    <!--<section class="container-wrapper--news">-->
+    <!--    <div class="container-fluid news-content-container">-->
+    <!--        <h2 class="justify-content-center news-heading"><i class="far fa-newspaper" aria-hidden="true"></i><span id="news"></span> News</h2>-->
 
-        </div>
-    </section>
+    <!--    </div>-->
+    <!--</section>-->
 
     <!-- Contact -->
     <section class="container-wrapper--contact">
@@ -492,21 +485,27 @@
                 <div class="col-sm order-lg-12 footer-col-1">
                     <ul class="list-inline social-links">
                         <li class="list-inline-item">
-                            <a href="https://www.facebook.com/TheCranberries/">
+                            <a href="https://www.facebook.com/TheCranberries/" target="_blank">
                                 <i class="fab fa-facebook" aria-hidden="true"></i>
                                 <span class="sr-only">Facebook</span>
                             </a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="https://www.instagram.com/thecranberries">
+                            <a href="https://www.instagram.com/thecranberries" target="_blank">
                                 <i class="fab fa-instagram" aria-hidden="true"></i>
                                 <span class="sr-only">Instagram</span>
                             </a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="https://twitter.com/The_Cranberries">
+                            <a href="https://twitter.com/The_Cranberries" target="_blank">
                                 <i class="fab fa-twitter" aria-hidden="true"></i>
                                 <span class="sr-only">Twitter</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.youtube.com/channel/UCb0vzLwvr7xbJgdqMzejDhw" target="_blank">
+                                <i class="fab fa-youtube" aria-hidden="true"></i>
+                                <span class="sr-only">Youtube</span>
                             </a>
                         </li>
                     </ul>
