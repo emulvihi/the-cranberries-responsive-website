@@ -1,4 +1,4 @@
-$('a[href^="#"]').on('click', function(event) {
+$('a[href^="#"]').not('.carousel-control-icons').on('click', function(event) {
 
             var target = $(this.getAttribute('href'));
 
