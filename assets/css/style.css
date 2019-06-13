@@ -94,7 +94,7 @@ h2 span {
 /* --------------------------------- Nav Bar */
 
 .navbar {
-    width: 100%;
+    width: 100vw;
 }
 
 .navbar-brand {
@@ -163,6 +163,10 @@ h2 span {
 }
 
 /* --------------------------------- Section Containers */
+
+.container-wrapper--landing {
+    width: 100vw;
+}
 
 .container-wrapper--about {
     background: linear-gradient(rgba(99, 51, 36, 0.5), rgba(99, 51, 36, 0.5)), url('../images/about-background.jpg') no-repeat top right;
@@ -500,4 +504,13 @@ form label {
         background: #964B35;
     }
 }
+
+/* --------------------------------- Media Queries */
+
+* {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+}
+
 
