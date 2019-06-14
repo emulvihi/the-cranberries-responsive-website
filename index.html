@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Cranberries' Official Site</title>
+    <link href="assets/images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <title>The Cranberries' Official Site</title>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="110">
@@ -81,8 +82,8 @@
                                     </div>
                                 </div>
                                 <div class="carousel-caption animated fadeInUp d-none d-md-block">
-                                    <h3>New Album</h3>
-                                    <h2>In the end</h2>
+                                    <h3 class="slide-caption-sm">New Album</h3>
+                                    <h2 class="slide-caption-lg">In the end</h2>
                                     <div class="dropdown">
                                         <button class="buy-btn btn btn-dark btn-lg dropdown-toggle" data-toggle="dropdown">
                                         Buy Now
@@ -104,7 +105,7 @@
                                     </div>
                                 </div>
                                 <div class="carousel-caption animated fadeInUp d-none d-md-block">
-                                    <h2>Summer Sale</h2>
+                                    <h2 class="slide-caption-lg">Summer Sale</h2>
                                     <div class="dropdown">
                                         <a href="https://thecranberries.shopfirebrand.com/" class="buy-btn btn btn-dark btn-lg merch-btn" target="_blank"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Merch Store</a>
                                     </div>
@@ -125,8 +126,8 @@
                                     </div>
                                 </div>
                                 <div class="carousel-caption animated fadeInUp d-none d-md-block">
-                                    <h3>New Video</h3>
-                                    <h2>All Over Now</h2>
+                                    <h3 class="slide-caption-sm">New Video</h3>
+                                    <h2 class="slide-caption-lg">All Over Now</h2>
                                     <div class="jump-to-video-btn hvr-hang">
                                         <a href="#video">
                                     <button class="btn down-btn">
@@ -422,7 +423,10 @@
                         <div class="profile-pics-container">
                             <div class="row profile-pics-row">
                                 <div class="col profile-container">
-                                    <img src="assets/images/dolores-oriordan-bio.jpg" alt="Dolores O'Riordan Headshot" class="profile-pics" id="dolores-pic">
+                                    <figure>
+                                        <img src="assets/images/dolores-oriordan-bio.jpg" alt="Dolores O'Riordan Headshot" class="profile-pics" id="dolores-pic">
+                                        <figcaption>Dolores O'Riordan - Lead Singer</figcaption>
+                                    </figure>
                                     <div class="profile-overlay">
                                         <div class="hover-text">
                                             <p>Dolores O'Riordan</p>
@@ -431,7 +435,10 @@
                                     </div>
                                 </div>
                                 <div class="col profile-container">
-                                    <img src="assets/images/noel-hogan-bio.jpg" alt="Noel Hogan Headshot" class="profile-pics" id="noel-pic">
+                                    <figure>
+                                        <img src="assets/images/noel-hogan-bio.jpg" alt="Noel Hogan Headshot" class="profile-pics" id="noel-pic">
+                                        <figcaption>Noel Hogan - Lead Guitarist</figcaption>
+                                    </figure>
                                     <div class="profile-overlay">
                                         <div class="hover-text">
                                             <p>Noel Hogan</p>
@@ -442,7 +449,10 @@
                             </div>
                             <div class="row profile-pics-row" id="profile-row-2">
                                 <div class="col profile-container">
-                                    <img src="assets/images/mike-hogan-bio.jpg" alt="Mike Hogan Headshot" class="profile-pics" id="mike-pic">
+                                    <figure>
+                                        <img src="assets/images/mike-hogan-bio.jpg" alt="Mike Hogan Headshot" class="profile-pics" id="mike-pic">
+                                        <figcaption>Mike Hogan - Bassist</figcaption>
+                                    </figure>
                                     <div class="profile-overlay">
                                         <div class="hover-text">
                                             <p>Mike Hogan</p>
@@ -451,7 +461,10 @@
                                     </div>
                                 </div>
                                 <div class="col profile-container">
-                                    <img src="assets/images/fergal-lawler-bio.jpg" alt="Fergal Lawler Headshot" class="profile-pics" id="fergal-pic">
+                                    <figure>
+                                        <img src="assets/images/fergal-lawler-bio.jpg" alt="Fergal Lawler Headshot" class="profile-pics" id="fergal-pic">
+                                        <figcaption>Fergal Lawler - Drummer</figcaption>
+                                    </figure>
                                     <div class="profile-overlay">
                                         <div class="hover-text">
                                             <p>Fergal Lawler</p>
@@ -483,13 +496,9 @@
                             <input type="email" class="form-control" id="formEmail" placeholder="name@example.com" required>
                         </div>
                         <div class="row">
-                            <div class="form-group col-sm duration-select">
-                                <label for="durationSelect">Number of Nights</label>
-                                <select class="form-control" id="durationSelect">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                </select>
+                            <div class="form-group col-sm date-select">
+                                <label for="formEmail">Date Select</label>
+                                <input type="date" class="form-control" id="formDate" placeholder="01/01/2019" required>
                             </div>
                             <div class="form-group col-sm venue-size">
                                 <label for="venueSize">Venue Size</label>

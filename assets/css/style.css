@@ -175,6 +175,16 @@ body {
     padding-bottom: 0px;
 }
 
+.slide-caption-lg {
+    font-size: 50px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.slide-caption-sm {
+    font-size: 35px;
+    text-shadow: 1px 1px 2px black;
+}
+
 /* --------------------------------- Section Containers */
 
 .container-wrapper--landing {
@@ -196,7 +206,7 @@ body {
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover;
+    -o-background-size: cover;            
     width: 100%;
 }
 
@@ -211,16 +221,16 @@ body {
 }
 
 .container-wrapper--video {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/The-Cranberries-920x584.jpg') no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/tour-background.jpg') no-repeat center center;
     background-size: cover;
     -webkit-background-size: cover;
-    -moz-background-size: cover;
+    -moz-background-size: cover;        
     -o-background-size: cover;
     width: 100%;
 }
 
 .container-wrapper--tour {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/tour-background.jpg') no-repeat top center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/The-Cranberries-920x584.jpg') no-repeat top center;
     background-attachment: fixed;
     background-size: cover;
     -webkit-background-size: cover;
@@ -231,7 +241,7 @@ body {
 }
 
 .container-wrapper--contact {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/oriordan.jpeg') no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/oriordan.jpeg') no-repeat center center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -248,7 +258,7 @@ body {
 .social-content-container,
 .news-content-container,
 .contact-content-container {
-    padding: 30px 40px 30px 40px;
+    padding: 30px 20px 30px 20px;
 }
 
 .landing-content-container {
@@ -302,6 +312,10 @@ body {
     opacity: 1;
 }
 
+.profile-container figcaption {
+    text-shadow: 1px 1px 2px black;
+}
+
 .hover-text {
     color: white;
     font-size: 20px;
@@ -347,17 +361,12 @@ body {
     padding-bottom: 40px;
 }
 
-/*.card-row-1,*/
-
-/*.card-row-2 {*/
-
-/*    margin: auto;*/
-
-/*}*/
+.card-row-2 .card {
+    margin-top: 0;
+}
 
 .card {
     margin: auto;
-    /*height: 100%;*/
     color: #000;
     font-family: 'logo-font', 'Roboto', Arial, sans-serif;
     width: 18rem;
@@ -403,14 +412,6 @@ body {
     max-width: 100vw;
 }
 
-/* --------------------------------- News */
-
-.news-heading {
-    text-transform: uppercase;
-    text-align: center;
-    margin: auto;
-}
-
 /* --------------------------------- Contact */
 
 .contact-heading {
@@ -428,7 +429,7 @@ form label {
     text-shadow: 1px 1px 2px black;
 }
 
-.duration-select,
+.date-select,
 .venue-size {
     padding: 0;
 }
@@ -460,6 +461,7 @@ footer {
 
 .footer-col-2 {
     margin-top: 30px;
+    padding: 0;
 }
 
 /* --------------------------------- Media Queries */
@@ -503,6 +505,9 @@ footer {
     .carousel-caption {
         padding-bottom: 50px;
     }
+    #carousel-img-3 .carousel-caption {
+        padding-bottom: 20px;
+    }
 }
 
 @media only screen and (min-width: 992px) {
@@ -527,6 +532,9 @@ footer {
     }
     .section-heading {
         font-size: 50px;
+    }
+    .video-container {
+        width: 60%;
     }
 }
 
