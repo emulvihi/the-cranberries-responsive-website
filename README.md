@@ -9,6 +9,8 @@ A live demo can be found [here](https://emulvihi.github.io/user-centric-mileston
 
 This project uses the skills learned so far in the course, combining HTML, CSS and User-Centric Front-End Development to create a mobile-first responsive site for the band The Cranberries. It fulfills fans' and promoters' needs by providing the ability for them to get in contact with the band, find out tour info, listen to The Cranberries' music as well as watch a video of it.
 
+Full User Design Experience plan can be found [here](https://github.com/emulvihi/user-centric-milestone-project/tree/master/user-design-experience)
+
 ### Project Functionality
 
 The website is fully responsive and on laptop and larger screens there is some extra content (Extra product cards in the Merch section).
