@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>Document</title>
 </head>
@@ -16,7 +17,7 @@
     <header>
         <!-- Nav Bar -->
         <!-- Bootstrap Nav Bar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top flex-row" id="nav">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top flex-row" id="nav">
             <a class="navbar-brand d-none d-sm-block" href="#Landing">
                 <img src="assets/images/logo.png" alt="Logo" class="responsive-img logo img-fluid">
             </a>
@@ -55,7 +56,7 @@
         <!-- End Bootstrap Nav Bar -->
 
     </header>
-
+    <!-- Landing -->
     <section class="container-wrapper--landing">
         <h2><span id="Landing"></span></h2>
         <!--Bootstrap Carousel-->
@@ -63,9 +64,10 @@
             <div class="no-padding">
                 <div class="carousel slide" id="carouselHeader" data-ride="carousel" data-wrap="true">
                     <div class="carousel-inner">
+                        <!--Slide One-->
                         <div class="carousel-item active" id="carousel-img-1">
                             <img src="assets/images/carousel1.jpg" alt="First Slide" class="d-block w-100 container-fluid">
-                            <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption animated fadeInUp d-none d-md-block">
                                 <h3>New Album</h3>
                                 <h2>In the end</h2>
                                 <div class="dropdown">
@@ -79,18 +81,20 @@
                                 </div>
                             </div>
                         </div>
+                        <!--Slide Two-->
                         <div class="carousel-item" id="carousel-img-2">
                             <img src="assets/images/carousel2.png" alt="Second Slide" class="d-block w-100 container-fluid">
-                            <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption animated fadeInUp d-none d-md-block">
                                 <h2>Summer Sale</h2>
                                 <div class="dropdown">
                                     <a href="https://thecranberries.shopfirebrand.com/" class="buy-btn btn btn-dark btn-lg visit-btn" target="_blank"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Merch Store</a>
                                 </div>
                             </div>
                         </div>
+                        <!--Slide Three-->
                         <div class="carousel-item" id="carousel-img-3">
                             <img src="assets/images/carousel3.jpg" alt="Third Slide" class="d-block w-100 container-fluid">
-                            <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption animated fadeInUp d-none d-md-block">
                                 <h3>New Video</h3>
                                 <h2>All Over Now</h2>
                                 <div class="jump-to-video-btn hvr-hang">
@@ -103,6 +107,7 @@
                             </div>
                         </div>
                     </div>
+                    <!--Carousel Movement Icons-->
                     <a class="carousel-control-prev carousel-control-icons" href="#carouselHeader" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
@@ -180,7 +185,7 @@
                     <div class="col-sm mt-4">
                         <!--Album Image-->
                         <img src="assets/images/no-need-to-argue.jpg" alt="The Cranberries Album: No Need to Argue" class="img-fluid" data-toggle="modal" data-target="#tidal">
-                        <!-- Spotify -->
+                        <!-- Spotify Player -->
                         <iframe class="music-player" src="https://open.spotify.com/embed/album/5GugLrmYMl5VRoe2zNgLGp" width="500" height="125"></iframe>
                         <!-- Buy Links -->
                         <div class="dropdown">
@@ -198,7 +203,7 @@
                     <div class="col-sm mt-4">
                         <!--Album Image-->
                         <img src="assets/images/to-the-faithful-departed.jpg" alt="The Cranberries Album: To the Faithful Departed" class="img-fluid" />
-                        <!-- Spotify -->
+                        <!-- Spotify Player -->
                         <iframe class="music-player" src="https://open.spotify.com/embed/album/6re8Qh8GMzxH92LO1xj2jU" width="500" height="125"></iframe>
                         <!-- Buy Links -->
                         <div class="dropdown">
@@ -219,7 +224,7 @@
                     <div class="col-sm mt-4">
                         <!--Album Image-->
                         <img src="assets/images/bury-the-hatchet.jpg" alt="The Cranberries Album: Bury the Hatchet" class="img-fluid" />
-                        <!-- Spotify -->
+                        <!-- Spotify Player -->
                         <iframe class="music-player" src="https://open.spotify.com/embed/album/2v9PjvIkQVnyQdtD1iQD7e" width="500" height="125"></iframe>
                         <!-- Buy Links -->
                         <div class="dropdown">
@@ -237,7 +242,7 @@
                     <div class="col-sm mt-4">
                         <!--Album Image-->
                         <img src="assets/images/intheend.jpg" alt="The Cranberries Album: In The End" class="img-fluid" />
-                        <!-- Spotify -->
+                        <!-- Spotify Player -->
                         <iframe class="music-player" src="https://open.spotify.com/embed/album/6HNTsQFMdG9XdQ4ROCG995" width="500" height="125"></iframe>
                         <!-- Buy Links -->
                         <div class="dropdown">
@@ -261,6 +266,7 @@
     <section class="container-wrapper--merch">
         <div class="container-fluid merch-content-container">
             <h2 class="justify-content-center merch-heading"><i class="fa fa-shopping-basket" aria-hidden="true"></i><span id="merch"></span> Merch</h2>
+            <!--Row 1-->
             <div class="row card-row-1">
                 <div class="card-deck mx-auto">
                     <div class="card" style="width: 18rem;">
@@ -296,6 +302,7 @@
                 </div>
 
             </div>
+            <!--Row 2-->
             <div class="row card-row-2 d-none d-lg-flex">
                 <div class="card-deck mx-auto">
                     <div class="card" style="width: 18rem;">
@@ -346,6 +353,7 @@
         <div class="row">
             <div class="col-sm-2">
             </div>
+            <!--Embedded Video Player-->
             <div class="col-sm-8 video-container video-container-ratio">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/h1lMxX8doSU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
@@ -358,6 +366,7 @@
     <section class="container-wrapper--about">
         <div class="container-fluid about-content-container">
             <div class="row">
+                <!--Band Bio-->
                 <div class="col-sm-6 order-sm-12">
                     <h2 class="justify-content-center about-heading"><i class="fa fa-info-circle" aria-hidden="true"></i><span id="about"></span> Bio</h2>
                     <div class="bio-content">
@@ -373,6 +382,7 @@
                             it after this.”</p>
                     </div>
                 </div>
+                <!--Profile Pics-->
                 <div class="col-sm-6 order-sm-1">
                     <div class="profile-pics-container">
                         <div class="row profile-pics-row">
@@ -434,6 +444,7 @@
     <section class="container-wrapper--contact">
         <div class="container-fluid contact-content-container">
             <h2 class="justify-content-center contact-heading"><i class="far fa-comments" aria-hidden="true"></i><span id="contact"></span> Contact</h2>
+            <!--Booking Form-->
             <div class="form-container mt-4">
                 <h3>Book the band for your own events</h3>
                 <form>
@@ -466,8 +477,8 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="textArea">Any Other Info</label>
-                        <textarea class="form-control" id="textArea" rows="3" placeholder="Let us know any other requirements or relevant info"></textarea>
+                        <label for="textArea">Event Information</label>
+                        <textarea class="form-control" id="textArea" rows="3" placeholder="Please include location, dates and any other relevant info"></textarea>
                     </div>
                     <div class="form-group">
                         <div>
@@ -478,10 +489,12 @@
             </div>
         </div>
     </section>
-
-    <footer class="container-fluid bg-dark">
+    
+    <!--Footer-->
+    <footer class="container-fluid">
         <div class="social-content-container">
             <div class="row">
+                <!--Social Links-->
                 <div class="col-sm order-lg-12 footer-col-1">
                     <ul class="list-inline social-links">
                         <li class="list-inline-item">
@@ -510,6 +523,7 @@
                         </li>
                     </ul>
                 </div>
+                <!--Newsletter Signup-->
                 <div class="col-sm order-lg-1 footer-col-2">
                     <h3 class="uppercase footer-heading"><i class="fa fa-envelope" aria-hidden="true"></i> Sign up for news about the band</h3>
                     <div class="row justify-content-center mb-4 col-sm">
@@ -525,6 +539,7 @@
         </div>
     </footer>
 
+    <!--Javascript-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
