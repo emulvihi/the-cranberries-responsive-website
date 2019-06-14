@@ -1,9 +1,4 @@
-# First Milestone Project
-## The Cranberries Responsive Website
-
-## Demo
-A live demo can be found [here](https://emulvihi.github.io/user-centric-milestone-project/).
-
+# The Cranberries Responsive Website
 
 ### What does it do and what need does it fulfill?
 
