@@ -12,10 +12,3 @@ $('a[href^="#"]').not('.carousel-control-icons').on('click', function(event) {
     }
 
 });
-
-$('#carouselHeader').on('slide',function(){
-  $('.carousel-caption').fadeOut(300);
-})
-$('#carouselHeader').on('slid',function(){
-  $('.carousel-caption').fadeIn(600);
-})
