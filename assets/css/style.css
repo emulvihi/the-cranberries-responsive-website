@@ -72,19 +72,43 @@ body {
 
 .down-btn {
     background-color: rgba(150, 75, 53, 1);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.down-btn-lg {
+    background-color: rgba(150, 75, 53, 1);
     height: 55px;
     width: 55px;
     border-radius: 50%;
 }
 
-.down-btn:hover {
+.down-btn-lg:hover {
     background-color: rgba(150, 75, 53, 0.7);
 }
 
 .jump-to-video-btn i {
     color: #fff;
+    font-size: 15px;
+}
+
+.jump-to-video-btn-lg i {
+    color: #fff;
     font-size: 30px;
     padding-top: 5px;
+}
+
+.buy-btn {
+    width: 100%;
+    max-width: 190px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.btn-sm {
+    font-size: 16px;
 }
 
 /* --------------------------------- Hover Effects */
@@ -150,7 +174,8 @@ body {
 }
 
 #carousel-img-1::before,
-#carousel-img-2::before {
+#carousel-img-2::before,
+#carousel-img-3::before {
     content: '';
     position: absolute;
     top: 0;
@@ -163,6 +188,7 @@ body {
 
 .carousel-caption {
     font-family: 'logo-font', 'Roboto', Arial, sans-serif;
+    padding-bottom: 0;
 }
 
 .carousel-control-next-icon,
@@ -339,13 +365,6 @@ body {
     width: 100%;
     margin: auto;
     border: none;
-}
-
-.buy-btn {
-    width: 100%;
-    max-width: 190px;
-    box-sizing: border-box;
-    font-weight: bold;
 }
 
 /* --------------------------------- Merch */
