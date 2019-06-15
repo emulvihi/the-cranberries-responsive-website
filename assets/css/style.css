@@ -460,9 +460,13 @@ footer {
     padding: 0;
 }
 
+.email-box {
+    margin: auto;
+}
+
 .newsletter-signup {
     max-width: 60vw;
-    margin: auto
+    margin: auto;
 }
 
 /* --------------------------------- Media Queries */
