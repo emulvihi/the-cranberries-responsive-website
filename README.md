@@ -38,6 +38,7 @@ The navigation links, including logo, and social links are functional. There are
 5. [Bootstrap 4](https://getbootstrap.com/)
    - Used throughout site for semantics and various elements including tables, carousels, forms and card decks
 6. Javascript
+   - Used to enable smooth scrolling effect on nav bar links
 7. [JQuery](https://jquery.com/)
    - Used to enable smooth scrolling effect on nav bar links
 8. [Bash](https://www.gnu.org/software/bash/)
