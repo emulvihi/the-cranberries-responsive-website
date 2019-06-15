@@ -403,8 +403,9 @@ body {
 /* --------------------------------- Tour */
 
 .tour-table {
+    width: 60%;
     font-size: 0.7rem;
-    margin: auto;
+    margin: 0 auto;
 }
 
 /* --------------------------------- Contact */
@@ -436,7 +437,7 @@ footer {
 }
 
 .footer-heading {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .social-links li a i {
@@ -457,6 +458,11 @@ footer {
 .footer-col-2 {
     margin-top: 30px;
     padding: 0;
+}
+
+.newsletter-signup {
+    max-width: 60vw;
+    margin: auto
 }
 
 /* --------------------------------- Media Queries */
