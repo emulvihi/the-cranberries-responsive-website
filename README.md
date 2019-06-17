@@ -64,6 +64,8 @@ If you wish to view or edit the site's files locally, navigate to the GitHub rep
 
 The site was tested on a large range of screen sizes (including the Galaxy S5, Pixel 2, Pixel 2 XL, iPhone 5/ SE, iPhone 6/7/8, iPhone 6/7/8 Plus, iPhone X, iPad, iPad Pro and responsive desktop) using Chrome Developer Tools both locally and on Github Pages. It was also tested on a variety of browsers including Google Chrome, Mozilla Firefox and Microsoft Edge. Several devices were used to test the site as well including OnePlus 3T, iPhone 6, iPhone X and Samsung Galaxy s7. All interactive functionality was tested, incorporating links, carousel controls, music streaming and video players and forms.
 
+I encountered a number of problems while testing, most notably on smaller screen sizes and in landscape mode on phones. Content including the tour table and the newsletter signup form were displaying too large and pushing off the screen causing white space to appear on the right side of the screen and a horizontal scroll bar to appear on the bottom of the page. As the nav bar was still stretching the full width of the screen, I first thought that it was an issue with it, namely the logo being too wide on smaller screens. After testing and realising that this wasn't the case, I found the real culprits to be the tour table and email signup form. I remedied the problem by changing the font-size on the tour table and reducing its width. For the email form, I gave it a max-width and centred it using "margin: auto".
+
 ### Credits
 
 **Acknowledgements**
